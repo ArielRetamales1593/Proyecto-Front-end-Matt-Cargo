@@ -17,7 +17,7 @@ Panel de administración para usuario ,consulta de cotizaciones y servicios adqu
 
 ## logo
 
-![granate|50](./assets/img/logogranate.png)
+![granate|50](./assets/img/logoblanco1.png)
 
 ## Paleta de colores
 
