@@ -2,7 +2,87 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
+
+/* banner */
+.contGris {
+  position: absolute;
+  width: 1002px;
+  height: 500px;
+  left: 340px;
+  top: 150px;
+  background: #d9d9d9;
+  border-radius: 50px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.toroPortada {
+  z-index: 0;
+  width: 60rem;
+}
+
+.contenedorBanner {
+  position: absolute;
+  z-index: 1;
+  right: 80px;
+  top: 150px;
+}
+
+.tituloBanner {
+  font-family: "Poppins";
+  font-style: normal;
+
+  font-size: 50px;
+  line-height: 90px;
+
+  color: rgba(97, 0, 0, 0.25);
+
+  margin-left: 800px;
+
+  width: 550px;
+  margin-bottom: 0px;
+}
+
+.subtituloBanner {
+  font-family: "Poppins";
+  font-style: normal;
+
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 0px;
+  margin-left: 810px;
+}
+
+.cotizar {
+  position: absolute;
+  bottom: 150px;
+  border: none;
+  box-shadow: 0 0 10px;
+  font-family: "poppins";
+  border: solid 1px white;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+}
+
+.cotizar:hover {
+  box-shadow: 0 0 20px;
+}
+
+.diseno1 {
+  width: 10px;
+  height: 98px;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #610000;
+  right: 550px;
+  top: 61px;
+  margin-right: 10px;
+}
+/* footer */
 
 #page-container {
   position: relative;
@@ -22,12 +102,12 @@ body {
   justify-content: space-between;
   background-color: white;
   color: black;
-  position: absolute;
+
   bottom: 0;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 15px;
-  height: 110px;
+  margin-top: 20%;
 }
 
 .footer-right {
@@ -39,4 +119,13 @@ body {
   background-color: gainsboro;
   width: 600px;
   border-radius: 5px;
+}
+.subtituloBanner {
+  font-family: "Poppins";
+  font-style: normal;
+
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 0px;
+  margin-left: 810px;
 }
