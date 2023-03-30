@@ -45,6 +45,9 @@ body {
   width: 550px;
   margin-bottom: 0px;
 }
+.tituloBanner:hover {
+  text-shadow: 0 0 10px white, 0 0 10px white, 0 0 40px white;
+}
 
 .subtituloBanner {
   font-family: "Poppins";
