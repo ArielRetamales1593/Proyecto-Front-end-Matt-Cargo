@@ -1,42 +1,42 @@
 /* resert de pagina */
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-#page-container{
-    position: relative;
+#page-container {
+  position: relative;
   min-height: 100vh;
 }
 
-
-
-
 /* estilos del footer en pantalla laptor */
-#logo{
-    width: 80px;
-    height: 80px;
+#logo {
+  width: 90px;
+
+  margin-top: 10px;
 }
 
-.footer-container{
-display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   background-color: #610000;
-   color: #fff;
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   padding-top: 20px;
-   padding-bottom: 15px;
-
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  height: 110px;
 }
 
-.footer-right{
-
-    padding-right: 100px;
+.footer-right {
+  padding-right: 100px;
 }
 
-.footer-left{
-    padding-left: 50px;
+.footer-left {
+  padding-left: 50px;
+  background-color: gainsboro;
+  width: 600px;
+  border-radius: 5px;
 }
