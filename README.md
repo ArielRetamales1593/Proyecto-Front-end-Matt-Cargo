@@ -25,6 +25,10 @@ Panel de administración para usuario ,consulta de cotizaciones y servicios adqu
 -Blanco:#ffffff
 #-Gris:#cabfbf
 
+##
+
+![banner|100](./assets/img/banner.png)
+
 ## Referencias
 
 ## Tecnologías utilizadas
