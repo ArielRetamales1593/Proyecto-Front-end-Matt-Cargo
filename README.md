@@ -25,9 +25,9 @@ Panel de administración para usuario ,consulta de cotizaciones y servicios adqu
 
 | Color   | Hex                                                              |
 | ------- | ---------------------------------------------------------------- |
-| Granate | ![#610000](https://via.placeholder.com/10/0a192f?text=+) #610000 |
-| Blanco  | ![#ffffff](https://via.placeholder.com/10/f8f8f8?text=+) #ffffff |
-| Gris    | ![#cabfbf](https://via.placeholder.com/10/00b48a?text=+) #cabfbf |
+| Granate | ![#610000](https://via.placeholder.com/10/610000?text=+) #610000 |
+| Blanco  | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Gris    | ![#cabfbf](https://via.placeholder.com/10/cabfbf?text=+) #cabfbf |
 
 -Granate:#610000
 -Blanco:#ffffff
