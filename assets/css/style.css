@@ -132,3 +132,32 @@ body {
   margin-top: 0px;
   margin-left: 810px;
 }
+
+/*inicio navbar*/
+header{
+  display: flex;
+  align-items: center;
+}
+.logoNav{
+  font-weight: 600;
+  margin-left: 2rem;
+}
+#menuLogin{
+  margin-left: auto;
+  margin-right: 2rem;
+}
+nav ul a li{
+  display: inline-block;
+  list-style: none;
+  margin: 2rem;
+  color: #000;
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+}
+nav ul a li:hover{
+  color: #610000;
+}
+/*fin navbar*
