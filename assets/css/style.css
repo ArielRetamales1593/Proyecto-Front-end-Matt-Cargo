@@ -183,10 +183,12 @@ nav ul a li:hover {
   border: solid 3px #d9d9d9;
   padding: 20px;
   border-radius: 20px;
+  transition: 1s ease;
 }
 
 .card:hover {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+  border: solid 3px #610000;
 }
 .contOp {
   margin-top: 200px;
@@ -211,6 +213,7 @@ nav ul a li:hover {
   object-fit: cover;
   filter: grayscale(100%);
   transition: 0.5s ease;
+  border-radius: 5px;
 }
 .carrusel img:hover {
   cursor: crosshair;
@@ -241,4 +244,15 @@ nav ul a li:hover {
 
 .info {
   margin: 150px;
+  margin-bottom: 200px;
+}
+
+.info2 {
+  background-color: #d9d9d9;
+  display: flex;
+}
+
+.repartidor {
+  width: 450px;
+  margin-left: 150px;
 }
