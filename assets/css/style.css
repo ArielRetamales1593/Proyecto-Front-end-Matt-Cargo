@@ -17,16 +17,27 @@ body {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   transform: rotate(180deg);
-  z-index: -1;
+  z-index: -2;
+  margin-bottom: 500px;
 }
 .toroPortada {
-  z-index: 0;
   width: 60rem;
 }
 
+.carretera {
+  width: 800px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: -1;
+  mix-blend-mode: difference;
+  opacity: 35%;
+
+  filter: contrast(900%) drop-shadow(16px 16px 20px rgb(26, 11, 11)) invert(75%);
+}
 .contenedorBanner {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   right: 80px;
   top: 150px;
 }
@@ -38,7 +49,7 @@ body {
   font-size: 50px;
   line-height: 90px;
 
-  color: rgba(97, 0, 0, 0.25);
+  color: white;
 
   margin-left: 800px;
 
@@ -134,19 +145,23 @@ body {
 }
 
 /*inicio navbar*/
-header{
+header {
   display: flex;
   align-items: center;
 }
-.logoNav{
+
+header:hover {
+  border-bottom: solid 3px rgba(97, 0, 0, 0.25);
+}
+.logoNav {
   font-weight: 600;
   margin-left: 2rem;
 }
-#menuLogin{
+#menuLogin {
   margin-left: auto;
   margin-right: 2rem;
 }
-nav ul a li{
+nav ul a li {
   display: inline-block;
   list-style: none;
   margin: 2rem;
@@ -154,10 +169,76 @@ nav ul a li{
   font-weight: 400;
 }
 
-a{
+a {
   text-decoration: none;
 }
-nav ul a li:hover{
+nav ul a li:hover {
   color: #610000;
 }
-/*fin navbar*
+
+/*  */
+.card {
+  width: 250px;
+  height: 300px;
+  border: solid 3px #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+}
+.contOp {
+  margin-top: 200px;
+  display: flex;
+  gap: 55px;
+
+  justify-content: center;
+}
+
+.carrusel {
+  display: flex;
+
+  height: 500px;
+  margin-top: 200px;
+
+  margin: 150px;
+}
+
+.carrusel img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+}
+.carrusel img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.login {
+  color: black;
+  width: 30px;
+}
+
+.camioneta {
+  width: 500px;
+  transition: 0.5s ease;
+}
+
+.info {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.camioneta:hover {
+  width: 300px;
+}
+
+.info {
+  margin: 150px;
+}
