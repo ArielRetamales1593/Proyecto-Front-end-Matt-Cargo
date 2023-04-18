@@ -33,15 +33,28 @@ form {
 }
 .logoForm {
   margin-left: 95px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .contForm {
-  background-color: white;
   width: 500px;
   padding: 50px;
   border-radius: 20px;
   display: flex;
   margin-top: 50px;
-  height: 600px;
+  height: 500px;
+
+  background-color: white;
+  z-index: 1;
+}
+
+.contForm2 {
+  width: 620px;
+  position: absolute;
+  height: 627px;
+  background-color: #610000;
+  z-index: 0;
+  border-radius: 20px;
+  left: 350px;
+  top: 20px;
 }

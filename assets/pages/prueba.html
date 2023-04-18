@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const formulario = document.querySelector("form");
+
+        formulario.addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          // recuperar datos del form
+          const email = document.querySelector("#email").value;
+
+          const contraseña = document.querySelector("#contraseña").value;
+
+          const usuario = {
+            email,
+            contraseña,
+          };
+
+          fetch("https://buttoned-ancient-tang.glitch.me/registro-usuario", {
+            method: "POST",
+            body: JSON.stringify(usuario),
+            Headers: {
+              "content-type": "application/json",
+            },
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              const resp = JSON.parse(data.datosPost);
+              console.dir(resp);
+            })
+            .catch((error) => console.error(error));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>
+      Formulario de registro
+
+      <form action="prueba.html" method="Post">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" />
+
+        <label for="contraseña"></label>
+        <input type="text" id="contraseña" name="contraseña" />
+        <button type="submit">registrar</button>
+      </form>
+    </h1>
+  </body>
+</html>

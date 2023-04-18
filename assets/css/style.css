@@ -126,6 +126,11 @@ body {
 
 .footer-right {
   padding-right: 100px;
+  border: 2px solid black;
+  width: 600px;
+  border-left: none;
+  border-radius: 5px;
+  text-align: right;
 }
 
 .footer-left {
@@ -192,6 +197,7 @@ nav ul a li:hover {
 }
 .contOp {
   margin-top: 200px;
+  margin-bottom: 500px;
   display: flex;
   gap: 55px;
 
@@ -237,6 +243,7 @@ nav ul a li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
 }
 .camioneta:hover {
   width: 300px;
@@ -250,9 +257,24 @@ nav ul a li:hover {
 .info2 {
   background-color: #d9d9d9;
   display: flex;
+  margin-top: 250px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: justify;
 }
 
 .repartidor {
   width: 450px;
   margin-left: 150px;
+}
+.logoCaja {
+  position: absolute;
+  left: 280px;
+  margin-top: 250px;
+}
+.servper {
+  margin: 150px;
 }
