@@ -6,32 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <!-- <script>
-        // viene en string y hay que cambiarlo a Json
-        const storageUser = localStorage.getItem("usuario");
+  <script>
+    // viene en string y hay que cambiarlo a Json
+    const storageUser = localStorage.getItem("usuario");
 
-        if (storageUser == null) {
-          window.location("login.html");
+    if (storageUser == null) {
+      window.location("login.html");
+    }
+
+    const objetoUser = JSON.parse(storageUser);
+    const token = objetoUser.user.stsTokenManager.accessToken;
+
+    const baseUrl = "http://localhost:3000";
+    const url = baseUrl + "/usuario/token";
+
+    fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+      body: "{}",
+    })
+      .then((respuesta) => {
+        if (!respuesta.ok) {
+          throw new Error("Token no válido");
         }
+        respuesta.json();
+      })
+      .then((data) => {
+        // Mostrar mensaje de éxito
+        console.log("Solicitud exitosa!");
+        console.log(data); // Mostrar los datos recibidos si es necesario
+      })
 
-        const objetoUser = JSON.parse(storageUser);
-        const token = objetoUser.user.stsTokenManager.accessToken;
-
-        const baseUrl = "http:/localhost:3000";
-        const url = baseUrl + "/usuario/token";
-
-        fetch(url, {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-            Authentication: "bearer" + token,
-          },
-        }).then(respuesta=>{
-
-    if(!respuesta.ok)
-
-        })
-  </script> -->
+      .catch((error) => {
+        // window.location = "login.html";
+      });
+  </script>
   <body>
     <h1>holaa</h1>
   </body>
