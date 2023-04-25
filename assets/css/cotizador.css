@@ -65,3 +65,30 @@ body {
   top: 180px;
   left: 250px;
 }
+
+@media screen and (min-width: 1400px) {
+  .contGranate {
+    position: absolute;
+    width: 1002px;
+    height: 400px;
+    right: 320px;
+
+    top: 116px;
+    background: #610000;
+    border-radius: 50px;
+
+    transform: rotate(180deg);
+
+    margin-bottom: 50px;
+
+    z-index: -1;
+  }
+
+  .logoCoti {
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+    top: 180px;
+    left: 350px;
+  }
+}

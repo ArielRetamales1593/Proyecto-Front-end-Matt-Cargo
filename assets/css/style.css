@@ -1,4 +1,4 @@
-/* resert de pagina */
+/* reset de pagina */
 body {
   padding: 0;
   margin: 0;
@@ -6,6 +6,7 @@ body {
 }
 
 /* banner */
+/* HEADER */
 .contGris {
   position: absolute;
   width: 1002px;
@@ -70,6 +71,8 @@ body {
   margin-left: 810px;
 }
 
+/* COTIZADOR */
+
 .cotizar {
   position: absolute;
   bottom: 150px;
@@ -96,6 +99,7 @@ body {
   top: 61px;
   margin-right: 10px;
 }
+
 /* footer */
 
 #page-container {
@@ -126,8 +130,8 @@ body {
 
 .footer-right {
   padding-right: 100px;
-  border: 2px solid black;
-  width: 600px;
+
+  width: 50%;
   border-left: none;
   border-radius: 5px;
   text-align: right;
@@ -136,17 +140,8 @@ body {
 .footer-left {
   padding-left: 50px;
   background-color: gainsboro;
-  width: 600px;
+  width: 50%;
   border-radius: 5px;
-}
-.subtituloBanner {
-  font-family: "Poppins";
-  font-style: normal;
-
-  font-size: 30px;
-  line-height: 40px;
-  margin-top: 0px;
-  margin-left: 810px;
 }
 
 /*inicio navbar*/
@@ -181,7 +176,7 @@ nav ul a li:hover {
   color: #610000;
 }
 
-/*  */
+/*CaRD  */
 .card {
   width: 250px;
   height: 300px;
@@ -203,6 +198,8 @@ nav ul a li:hover {
 
   justify-content: center;
 }
+
+/* CARRUSEL */
 
 .carrusel {
   display: flex;
@@ -227,6 +224,7 @@ nav ul a li:hover {
   opacity: 1;
   filter: contrast(120%);
 }
+
 .login {
   color: black;
   width: 30px;
@@ -277,4 +275,203 @@ nav ul a li:hover {
 }
 .servper {
   margin: 150px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1400px) {
+  .contGris {
+    position: absolute;
+    width: 1002px;
+    height: 500px;
+    left: 340px;
+    top: 150px;
+    background: #d9d9d9;
+    border-radius: 50px;
+  }
+
+  .contenedorBanner {
+    position: absolute;
+    z-index: 0;
+    right: 300px;
+    top: 150px;
+  }
+
+  .tituloBanner {
+    font-family: "Poppins";
+    font-style: normal;
+
+    font-size: 50px;
+    line-height: 90px;
+
+    margin-left: 800px;
+
+    width: 550px;
+    margin-bottom: 0px;
+  }
+
+  .cotizar {
+    bottom: 350px;
+  }
+}
+
+@media screen and (max-width: 1547px) {
+  .toroPortada {
+    width: 50rem;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+  }
+  .nav1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contGris {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+    left: 0px;
+    top: 500px;
+    background: #d9d9d9;
+    border-radius: 0;
+
+    z-index: -2;
+    margin-bottom: 500px;
+  }
+  .toroPortada {
+    width: 24rem;
+  }
+
+  .info {
+    margin-bottom: 200px;
+    margin-top: 400px;
+    width: 100%;
+    margin-left: 2px;
+    margin-right: 0px;
+  }
+  .camioneta {
+    width: 150px;
+  }
+  .carretera {
+    display: none;
+  }
+  .contenedorBanner {
+    position: absolute;
+    z-index: 0;
+
+    top: 650px;
+  }
+
+  .tituloBanner {
+    font-family: "Poppins";
+    font-style: normal;
+
+    font-size: 40px;
+    line-height: 30px;
+    color: white;
+
+    margin-left: 800px;
+
+    width: 200px;
+    margin-bottom: 0px;
+  }
+  .tituloBanner:hover {
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 40px white;
+  }
+
+  .subtituloBanner {
+    font-family: "Poppins";
+    font-style: normal;
+
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left: 810px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #menuLogin {
+    position: absolute;
+
+    top: 350px;
+  }
+
+  .cotizar {
+    bottom: 350px;
+    top: 900px;
+    right: 120px;
+  }
+
+  info2 {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+  .repartidor {
+    display: none;
+  }
+  .logoCaja {
+    display: none;
+  }
+  .servper {
+    margin: 0;
+    font-size: 16px;
+  }
+  .carrusel {
+    display: none;
+  }
+  .contOp {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .card {
+    margin-bottom: 300px;
+    margin-left: 35px;
+  }
+
+  #logo {
+    width: 90px;
+
+    margin-top: 10px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-right {
+    border-left: none;
+    border-radius: 5px;
+    text-align: right;
+  }
+
+  .footer-left {
+    background-color: white;
+
+    border-radius: 5px;
+  }
 }

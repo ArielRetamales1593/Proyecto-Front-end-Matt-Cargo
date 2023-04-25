@@ -45,8 +45,8 @@
           // const email = formData.get("email");
           // const contrasena = formData.get("contrasena");
 
-          const email = document.getElementById("email");
-          const contrasena = document.getElementById("password");
+          const email = document.getElementById("email").value;
+          const contrasena = document.getElementById("password").value;
           const nuevoUsuario = {
             email,
             contrasena,
@@ -74,10 +74,11 @@
 
             const usuario = objetoJson.usuario;
             localStorage.setItem("usuario", JSON.stringify(usuario));
-            windows.location = "dashboard.html";
+            window.location = "./cuenta.html";
           } catch (error) {
-            console.error(error.code);
-            console.error(error.message);
+            // conconssole.error(error.code);
+            // console.error(error.message);
+            console.dir(error);
           }
         });
       });
