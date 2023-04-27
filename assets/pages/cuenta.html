@@ -11,7 +11,7 @@
     const storageUser = localStorage.getItem("usuario");
 
     if (storageUser == null) {
-      window.location("login.html");
+      window.location = "login.html";
     }
 
     const objetoUser = JSON.parse(storageUser);
@@ -26,7 +26,6 @@
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
       },
-      body: "{}",
     })
       .then((respuesta) => {
         if (!respuesta.ok) {
@@ -41,7 +40,7 @@
       })
 
       .catch((error) => {
-        // window.location = "login.html";
+        window.location = "login.html";
       });
   </script>
   <body>
