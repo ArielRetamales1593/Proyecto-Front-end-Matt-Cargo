@@ -25,27 +25,52 @@ export default function CategoriaListado() {
 
   return (
     <>
-      <h2>Listado de Categorías</h2>
-      <table border={1}>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Descripción</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          {categorias.map((categoria) => (
-            <tr key={categoria.id}>
-              <td>{categoria.id}</td>
-              <td>{categoria.nombre}</td>
-              <td>{categoria.descripcion}</td>
-              <td></td>
+      <div className="contGris"></div>
+      <div className="contGranate"></div>
+
+      <h2>Ciudades ingresadas</h2>
+      {
+        <table border={1}>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Ciudad</th>
+              <th>Región</th>
+              <th>Acciones</th>
             </tr>
+          </thead>
+          <tbody>
+            {categorias.map((categoria) => (
+              <tr key={categoria.id}>
+                <td>{categoria.id}</td>
+                <td>{categoria.nombre}</td>
+                <td>{categoria.region}</td>
+                <td> </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      }
+      <form id="formCotizador">
+        <h1> Cotizador</h1>
+        <label for="origen">Origen:</label>
+        <select>
+          {categorias.map((categoria) => (
+            <option key={categoria.id}>
+              <td>{categoria.nombre}</td>
+            </option>
           ))}
-        </tbody>
-      </table>
+        </select>
+
+        <label for="origen">Destino:</label>
+        <select>
+          {categorias.map((categoria) => (
+            <option key={categoria.id}>
+              <td>{categoria.nombre}</td>
+            </option>
+          ))}
+        </select>
+      </form>
     </>
   );
 }

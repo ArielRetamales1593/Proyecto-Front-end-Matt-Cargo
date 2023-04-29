@@ -1,28 +1,39 @@
 function calcularPrecio() {
-  const tarifas = [
-    { distancia: 0, tarifa: 0 },
-    { distancia: 50, tarifa: 100 },
-    { distancia: 100, tarifa: 200 },
-    { distancia: 200, tarifa: 300 },
-    { distancia: 500, tarifa: 500 },
-  ];
-
+  // Obtenemos los valores seleccionados en los campos
   const origen = document.getElementById("origen").value;
   const destino = document.getElementById("destino").value;
   const peso = document.getElementById("peso").value;
 
-  let distancia = Math.abs(origen.charCodeAt(0) - destino.charCodeAt(0));
-  let tarifa;
+  // Definimos los precios por kilómetro según la distancia
 
-  for (let i = tarifas.length - 1; i >= 0; i--) {
-    if (distancia >= tarifas[i].distancia) {
-      tarifa = tarifas[i].tarifa;
-      break;
-    }
+  let precio = 0;
+  if (origen === "Antofagasta" && destino === "Iquique") {
+    precio = 1000;
+  } else if (origen === "Iquique" && destino === "Calama") {
+    precio = 1500;
+  } else if (origen === "Calama" && destino === "Arica") {
+    precio = 2000;
+  } else {
+    precio = 0;
   }
 
-  const precio = peso * tarifa;
-  const resultado = `El precio del envío es $${precio}`;
+  totalPeso(peso);
 
-  document.getElementById("resultado").textContent = resultado;
+  console.log(precioFinal);
+  // Calculamos el precio total según el peso y la distancia
+  const precioTotal = precio + precioFinal;
+
+  // Mostramos el resultado en la etiqueta p con el id "resultado"
+  const resultadoEl = document.getElementById("resultado");
+  resultadoEl.textContent = `El precio total es: $${precioTotal}`;
+}
+function totalPeso(kg) {
+  if (kg > 0 && kg < 99) {
+    precioFinal = 50000;
+  } else if (kg >= 100 && kg <= 199) {
+    precioFinal = 100000;
+  } else if (kg >= 200 && kg <= 299) {
+    precioFinal = 200000;
+  }
+  return precioFinal;
 }

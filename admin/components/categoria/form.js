@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function CategoriaForm() {
   const [nombre, setNombre] = useState("");
-  const [descripcion, setDescripcion] = useState("");
+  const [region, setRegion] = useState("");
 
   // funcion que se crea al momento de pasar los datos del formulario /// crea un objeto de nombre categoria
   const procesarFormulario = async (eventoSubmit) => {
@@ -10,7 +10,7 @@ export default function CategoriaForm() {
       eventoSubmit.preventDefault();
       const categoria = {
         nombre,
-        descripcion,
+        region,
       };
 
       // peticion a la Api
@@ -36,6 +36,7 @@ export default function CategoriaForm() {
 
   return (
     <>
+      <h2>Agregar ciudades</h2>
       <form action="form" method="post" onSubmit={procesarFormulario}>
         <label htmlFor="nombre">Nombre</label>
         <input
@@ -45,15 +46,14 @@ export default function CategoriaForm() {
           onChange={(e) => setNombre(e.target.value)}
         />
 
-        <label>Descripción</label>
-        <textarea
-          value={descripcion}
-          onChange={(e) => setDescripcion(e.target.value)}
-        ></textarea>
+        <label>Región</label>
+        <input
+          value={region}
+          onChange={(e) => setRegion(e.target.value)}
+        ></input>
 
         <button type="submit">Guardar</button>
       </form>
-      Nombre: {nombre} | Descripción: {descripcion}
     </>
   );
 }
