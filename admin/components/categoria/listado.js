@@ -1,4 +1,11 @@
 import { useEffect, useState } from "react";
+import { Poppins } from "next/font/google";
+const font = Poppins({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+import Image from "next/image";
 
 export default function CategoriaListado() {
   const [categorias, setCategorias] = useState([]);
@@ -24,13 +31,13 @@ export default function CategoriaListado() {
   }, []);
 
   return (
-    <>
+    <div className={font.className}>
       <div className="contGris"></div>
       <div className="contGranate"></div>
+      <h3 className="tituloTabla">Ciudades ingresadas</h3>
 
-      <h2>Ciudades ingresadas</h2>
       {
-        <table border={1}>
+        <table border={1} className="tabla">
           <thead>
             <tr>
               <th>ID</th>
@@ -52,7 +59,7 @@ export default function CategoriaListado() {
         </table>
       }
       <form id="formCotizador">
-        <h1> Cotizador</h1>
+        <h2> Cotizador</h2>
         <label for="origen">Origen:</label>
         <select>
           {categorias.map((categoria) => (
@@ -62,7 +69,7 @@ export default function CategoriaListado() {
           ))}
         </select>
 
-        <label for="origen">Destino:</label>
+        <label htmlfor="origen">Destino:</label>
         <select>
           {categorias.map((categoria) => (
             <option key={categoria.id}>
@@ -70,7 +77,14 @@ export default function CategoriaListado() {
             </option>
           ))}
         </select>
+
+        <Image
+          className="logo"
+          src="/img/logoblancoFinal.png"
+          width={200}
+          height={200}
+        />
       </form>
-    </>
+    </div>
   );
 }

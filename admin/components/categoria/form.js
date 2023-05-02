@@ -1,4 +1,9 @@
 import { useState } from "react";
+import { Poppins } from "next/font/google";
+const font = Poppins({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 export default function CategoriaForm() {
   const [nombre, setNombre] = useState("");
@@ -35,9 +40,14 @@ export default function CategoriaForm() {
   };
 
   return (
-    <>
-      <h2>Agregar ciudades</h2>
-      <form action="form" method="post" onSubmit={procesarFormulario}>
+    <div className={font.className}>
+      <h2 className="titulo1">Agregar Ciudades</h2>
+      <form
+        className="agregar"
+        action="form"
+        method="post"
+        onSubmit={procesarFormulario}
+      >
         <label htmlFor="nombre">Nombre</label>
         <input
           type="text"
@@ -54,6 +64,6 @@ export default function CategoriaForm() {
 
         <button type="submit">Guardar</button>
       </form>
-    </>
+    </div>
   );
 }
