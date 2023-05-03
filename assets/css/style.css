@@ -22,7 +22,7 @@ body {
   margin-bottom: 500px;
 }
 .toroPortada {
-  width: 60rem;
+  width: 70rem;
   z-index: 2;
   transition: 0.5s ease;
 }
@@ -135,7 +135,6 @@ li {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 15px;
-  margin-top: 20%;
 }
 
 .footer-right {
@@ -152,6 +151,11 @@ li {
   background-color: gainsboro;
   width: 50%;
   border-radius: 5px;
+}
+
+.logoFooter {
+  margin-top: 3rem;
+  font-size: 2.3em;
 }
 
 /*inicio navbar*/
@@ -377,9 +381,22 @@ nav ul a li:hover {
   grid-area: contE;
 }
 
+.contVideo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.videologo {
+  width: 300px;
+  margin-bottom: 0;
+}
+
 /* RESPONSIVE */
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1700px) {
   .contGris {
     position: absolute;
     width: 1002px;
@@ -420,18 +437,9 @@ nav ul a li:hover {
   }
 }
 
-@media screen and (max-width: 1547px) {
-  .toroPortada {
-    width: 50rem;
-    margin-top: 100px;
-  }
-}
 /* /////////////////////////////////////////////////////////////////////////// 375 */
 
-@media screen and (max-width: 500px) {
-}
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 375px) {
   * {
     margin: 0;
     padding: 0;
@@ -630,7 +638,7 @@ nav ul a li:hover {
   .footer-container {
     margin: 0;
     background-color: #d9d9d9;
-    margin-top: 80px;
+
     flex-direction: column;
     align-items: center;
   }

@@ -5,7 +5,7 @@ const font = Poppins({
   subsets: ["latin"],
 });
 
-export default function CategoriaForm() {
+export default function CategoriaForm({ categorias, setCategorias }) {
   const [nombre, setNombre] = useState("");
   const [region, setRegion] = useState("");
 
@@ -34,6 +34,8 @@ export default function CategoriaForm() {
 
       const categoriaGuardada = await respuesta.json();
       console.dir(categoriaGuardada);
+      // actualiza la tabla
+      setCategorias([...categorias, categoriaGuardada]);
     } catch (error) {
       console.error(error);
     }

@@ -14,63 +14,21 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-#formCotizador {
-  position: absolute;
-  top: 15rem;
-  margin-left: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  z-index: 1;
-  color: black;
-  left: 29rem;
-}
-
-.contGris {
-  position: absolute;
-  width: 30rem;
-  height: 17rem;
-  right: 9rem;
-  top: 13.8rem;
-  background: white;
-  border-radius: 50px;
-
-  transform: rotate(180deg);
-  z-index: 0;
-  margin-bottom: 50px;
-
-  z-index: 0;
-  border: solid 10px #d9d9d9;
-}
-
-.logoCoti {
-  position: absolute;
-  width: 350px;
-  z-index: 1;
-  top: 120px;
-  left: 250px;
-}
-
-.logo {
-  position: absolute;
-  left: 200px;
-  top: 20px;
-}
-
 .tabla {
-  margin-left: 100px;
+  width: 1000px;
   font-size: 1em;
   margin-top: 2rem;
   border: solid 5px #d9d9d9;
   border-radius: 5px;
   margin-top: 0px;
+  text-align: center;
 }
 
+.contAdmin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .titulo1 {
   text-align: center;
   color: black;
@@ -88,28 +46,150 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.logoNav {
-  font-weight: 600;
-  margin-left: 0;
-  align-self: flex-start;
-}
+
 #menuLogin {
   margin-left: auto;
-}
-.nav1 {
-  display: flex;
-
-  align-items: center;
-  justify-content: space-around;
-  margin-right: 27rem;
-
-  margin-bottom: 50px;
-}
-.listaNav {
-  display: flex;
-  gap: 100px;
 }
 
 li {
   list-style: none;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formCotizador {
+  position: absolute;
+  top: 200px;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.contGris {
+  position: absolute;
+  width: 1002px;
+  height: 400px;
+
+  top: 150px;
+  background: white;
+  border-radius: 50px;
+
+  transform: rotate(180deg);
+  z-index: 0;
+  margin-bottom: 50px;
+  border: solid 8px #d9d9d9;
+  z-index: 0;
+}
+
+.contGranate {
+  position: absolute;
+  width: 2000px;
+  height: 400px;
+  right: 220px;
+
+  top: 116px;
+  background: #610000;
+  border-radius: 50px;
+
+  transform: rotate(180deg);
+
+  margin-bottom: 50px;
+
+  z-index: -1;
+  filter: blur(250px);
+}
+
+.logoCoti {
+  position: absolute;
+
+  z-index: 1;
+  top: 180px;
+  left: 250px;
+}
+
+.contNav {
+  display: flex;
+  align-items: center;
+}
+
+.contNav:hover {
+  border-bottom: solid 3px rgba(97, 0, 0, 0.25);
+}
+.logoNav {
+  font-weight: 600;
+  margin-left: 2rem;
+}
+#menuLogin {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+nav ul a li {
+  display: inline-block;
+  list-style: none;
+  margin: 2rem;
+  color: #000;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+nav ul a li:hover {
+  color: #610000;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* estilos del footer en pantalla laptor */
+#logo {
+  width: 90px;
+
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+}
+.footer-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  color: black;
+
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.footer-right {
+  padding-right: 50px;
+
+  width: 50%;
+  border-left: none;
+  border-radius: 5px;
+  text-align: end;
+}
+
+.footer-left {
+  padding-left: 50px;
+  background-color: gainsboro;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.logoFooter {
+  margin-top: 3rem;
+  font-size: 2em;
 }

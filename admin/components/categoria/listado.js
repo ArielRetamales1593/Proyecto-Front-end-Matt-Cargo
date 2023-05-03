@@ -7,9 +7,7 @@ const font = Poppins({
 
 import Image from "next/image";
 
-export default function CategoriaListado() {
-  const [categorias, setCategorias] = useState([]);
-
+export default function CategoriaListado({ categorias, setCategorias }) {
   const cargarDatos = async () => {
     try {
       const baseUrl = "http://localhost:3000";
@@ -30,10 +28,29 @@ export default function CategoriaListado() {
     cargarDatos();
   }, []);
 
+  const eliminar = async (categoria) => {
+    try {
+      //const baseUrl   = Configuracion.getBaseUrl();
+      const baseUrl = "http://localhost:3000";
+      const url = baseUrl + "/categoria?id=" + categoria.id;
+      //const url       = baseUrl + '/categoria/'+categoria.id;
+
+      const respuesta = await fetch(url, {
+        method: "DELETE",
+      });
+      if (!respuesta.ok) throw new Error("No se pudo borrar la categoría!!!");
+      const resultado = await respuesta.json();
+      console.log("Categoría borrada de manera exitosa");
+
+      // actualizar el listado
+      cargarDatos();
+    } catch (error) {
+      console.error({ error: error.message });
+    }
+  };
+
   return (
     <div className={font.className}>
-      <div className="contGris"></div>
-      <div className="contGranate"></div>
       <h3 className="tituloTabla">Ciudades ingresadas</h3>
 
       {
@@ -52,13 +69,16 @@ export default function CategoriaListado() {
                 <td>{categoria.id}</td>
                 <td>{categoria.nombre}</td>
                 <td>{categoria.region}</td>
-                <td> </td>
+                <td>
+                  <button>Editar</button>
+                  <button onClick={() => eliminar(categoria)}>Eliminar</button>
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
-      }
-      <form id="formCotizador">
+
+        /* <form id="formCotizador">
         <h2> Cotizador</h2>
         <label for="origen">Origen:</label>
         <select>
@@ -84,7 +104,8 @@ export default function CategoriaListado() {
           width={200}
           height={200}
         />
-      </form>
+      </form> */
+      }
     </div>
   );
 }
