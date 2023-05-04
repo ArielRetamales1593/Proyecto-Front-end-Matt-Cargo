@@ -26,6 +26,27 @@ export default function Preguntas({ contactos, setContacto }) {
     cargarDatos();
   }, []);
 
+  const eliminar = async (contacto) => {
+    try {
+      //const baseUrl   = Configuracion.getBaseUrl();
+      const baseUrl = "http://localhost:3000";
+      const url = baseUrl + "/consulta?id=" + contacto.id;
+      //const url       = baseUrl + '/categoria/'+categoria.id;
+
+      const respuesta = await fetch(url, {
+        method: "DELETE",
+      });
+      if (!respuesta.ok) throw new Error("No se pudo borrar la categoría!!!");
+      const resultado = await respuesta.json();
+      console.log("Categoría borrada de manera exitosa");
+
+      // actualizar el listado
+      cargarDatos();
+    } catch (error) {
+      console.error({ error: error.message });
+    }
+  };
+
   return (
     <div className={font.className}>
       <h3 className="tituloTabla">Consultas Usuarios</h3>
@@ -47,6 +68,10 @@ export default function Preguntas({ contactos, setContacto }) {
               {" "}
               <strong>Id:</strong> {contacto.id}
             </p>
+
+            <button className="eliminar" onClick={() => eliminar(contacto)}>
+              Eliminar
+            </button>
           </div>
         ))}
       </div>

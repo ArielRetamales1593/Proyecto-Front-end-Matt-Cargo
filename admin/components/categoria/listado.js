@@ -68,7 +68,12 @@ export default function CategoriaListado({ categorias, setCategorias }) {
                 <td>{categoria.nombre}</td>
                 <td>{categoria.region}</td>
                 <td>
-                  <button onClick={() => eliminar(categoria)}>Eliminar</button>
+                  <button
+                    className="eliminar"
+                    onClick={() => eliminar(categoria)}
+                  >
+                    Eliminar
+                  </button>
                 </td>
               </tr>
             ))}

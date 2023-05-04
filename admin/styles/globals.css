@@ -191,10 +191,25 @@ li {
 }
 .contConsultas {
   display: flex;
+  flex-direction: column;
 
   gap: 20px;
   margin-bottom: 100px;
 }
 .card {
-  border: dashed 2px #610000;
+  padding: 20px;
+  border: double 10px #610000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.eliminar:hover {
+  background-color: #610000;
+  color: #d9d9d9;
+}
+
+.eliminar {
+  width: 50px;
+  margin-top: 20px;
 }
