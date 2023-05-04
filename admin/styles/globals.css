@@ -152,15 +152,13 @@ nav ul a li:hover {
 /* estilos del footer en pantalla laptor */
 #logo {
   width: 90px;
-
-  margin-top: 10px;
 }
 
 li {
   list-style: none;
 }
 .footer-container {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -169,8 +167,6 @@ li {
 
   bottom: 0;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 15px;
 }
 
 .footer-right {
@@ -192,4 +188,13 @@ li {
 .logoFooter {
   margin-top: 3rem;
   font-size: 2em;
+}
+.contConsultas {
+  display: flex;
+
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.card {
+  border: dashed 2px #610000;
 }

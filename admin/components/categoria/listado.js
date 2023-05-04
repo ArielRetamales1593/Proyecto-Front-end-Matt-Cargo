@@ -5,8 +5,6 @@ const font = Poppins({
   subsets: ["latin"],
 });
 
-import Image from "next/image";
-
 export default function CategoriaListado({ categorias, setCategorias }) {
   const cargarDatos = async () => {
     try {
@@ -70,7 +68,6 @@ export default function CategoriaListado({ categorias, setCategorias }) {
                 <td>{categoria.nombre}</td>
                 <td>{categoria.region}</td>
                 <td>
-                  <button>Editar</button>
                   <button onClick={() => eliminar(categoria)}>Eliminar</button>
                 </td>
               </tr>
