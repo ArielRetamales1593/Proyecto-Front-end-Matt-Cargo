@@ -16,7 +16,7 @@ formulario.addEventListener("submit", async (SubmitEvent) => {
     mensaje,
   };
 
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = getBaseUrl();
   const url = baseUrl + "/contacto";
 
   const fetchConfig = {

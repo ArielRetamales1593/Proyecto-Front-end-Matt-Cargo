@@ -165,11 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const formulario = document.querySelector("form");
   formulario.addEventListener("submit", async (SubmitEvent) => {
     SubmitEvent.preventDefault();
-    // const formElement = SubmitEvent.currentTarget;
-    // const formData = new FormData(formElement);
-
-    // const email = formData.get("email");
-    // const contrasena = formData.get("contrasena");
 
     const email = document.getElementById("email").value;
     const contrasena = document.getElementById("password").value;
@@ -178,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
       contrasena,
     };
 
-    const baseUrl = "http://localhost:3000";
+    const baseUrl = getUral;
     const url = baseUrl + "/registro";
 
     const fetchConfig = {

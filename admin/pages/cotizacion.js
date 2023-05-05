@@ -1,4 +1,3 @@
-import Nav from "@/components/estructura/nav";
 import Cotizador from "@/components/categoria/cotizador";
 import { useState } from "react";
 

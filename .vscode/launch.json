@@ -11,6 +11,13 @@
 
       "url": "http://localhost:5500/${relativeFile}",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome NextJS",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }

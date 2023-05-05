@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
       contrasena,
     };
 
-    const baseUrl = "http://localhost:3000";
+    const baseUrl = getBaseUrl();
     const url = baseUrl + "/login";
 
     const fetchConfig = {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: { "Content-type": "application/json" },
       body: JSON.stringify(nuevoUsuario),
     };
 

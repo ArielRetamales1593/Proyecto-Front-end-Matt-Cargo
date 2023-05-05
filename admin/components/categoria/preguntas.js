@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Poppins } from "next/font/google";
+import Configuracion from "../otro/config";
 const font = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -8,7 +9,7 @@ const font = Poppins({
 export default function Preguntas({ contactos, setContacto }) {
   const cargarDatos = async () => {
     try {
-      const baseUrl = "http://localhost:3000";
+      const baseUrl = Configuracion.getWsBaseUrl();
       const url = baseUrl + "/consulta";
       const respuesta = await fetch(url);
 
@@ -28,8 +29,8 @@ export default function Preguntas({ contactos, setContacto }) {
 
   const eliminar = async (contacto) => {
     try {
-      //const baseUrl   = Configuracion.getBaseUrl();
-      const baseUrl = "http://localhost:3000";
+      const baseUrl = Configuracion.getWsBaseUrl();
+
       const url = baseUrl + "/consulta?id=" + contacto.id;
       //const url       = baseUrl + '/categoria/'+categoria.id;
 

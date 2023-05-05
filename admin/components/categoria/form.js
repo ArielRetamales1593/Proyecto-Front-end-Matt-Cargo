@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Poppins } from "next/font/google";
+import Configuracion from "../otro/config";
 const font = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -11,6 +12,7 @@ export default function CategoriaForm({ categorias, setCategorias }) {
 
   // funcion que se crea al momento de pasar los datos del formulario /// crea un objeto de nombre categoria
   const procesarFormulario = async (eventoSubmit) => {
+    debugger;
     try {
       eventoSubmit.preventDefault();
       const categoria = {
@@ -19,7 +21,7 @@ export default function CategoriaForm({ categorias, setCategorias }) {
       };
 
       // peticion a la Api
-      const baseUrl = "http://localhost:3000";
+      const baseUrl = Configuracion.getWsBaseUrl();
       const url = baseUrl + "/categoria";
       // la funcion debe esperar que se complete una accion asincrona
       const respuesta = await fetch(url, {

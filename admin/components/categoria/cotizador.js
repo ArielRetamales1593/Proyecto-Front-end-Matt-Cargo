@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Poppins } from "next/font/google";
+import Configuracion from "../otro/config";
 const font = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -61,7 +62,7 @@ export default function CategoriaListado({ categorias, setCategorias }) {
 
   const cargarDatos = async () => {
     try {
-      const baseUrl = "http://localhost:3000";
+      const baseUrl = Configuracion.getWsBaseUrl();
       const url = baseUrl + "/categoria";
       const respuesta = await fetch(url);
 
@@ -81,8 +82,8 @@ export default function CategoriaListado({ categorias, setCategorias }) {
 
   const eliminar = async (categoria) => {
     try {
-      //const baseUrl   = Configuracion.getBaseUrl();
-      const baseUrl = "http://localhost:3000";
+      const baseUrl = Configuracion.getWsBaseUrl();
+
       const url = baseUrl + "/categoria?id=" + categoria.id;
       //const url       = baseUrl + '/categoria/'+categoria.id;
 
