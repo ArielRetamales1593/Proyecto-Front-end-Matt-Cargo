@@ -26,6 +26,8 @@ export default function CategoriaListado({ categorias, setCategorias }) {
       setPrecio(1000);
     } else if (origen === "Iquique" && destino === "Calama") {
       setPrecio(1500);
+    } else if (origen === "Calama" && destino === "Iquique") {
+      setPrecio(1500);
     } else if (origen === "Calama" && destino === "Arica") {
       setPrecio(2500);
     } else if (origen === "Iquique" && destino === "Santiago") {

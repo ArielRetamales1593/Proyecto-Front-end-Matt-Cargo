@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Poppins } from "next/font/google";
 import Configuracion from "../otro/config";
+
 const font = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],

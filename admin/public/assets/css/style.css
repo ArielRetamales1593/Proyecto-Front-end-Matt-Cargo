@@ -43,6 +43,10 @@ body {
 
   filter: contrast(900%) drop-shadow(16px 16px 20px rgb(26, 11, 11)) invert(75%);
 }
+
+.mapa {
+  width: 120px;
+}
 .contenedorBanner {
   position: absolute;
   z-index: 0;
@@ -90,11 +94,17 @@ body {
   border: solid 1px white;
   border-radius: 10px;
   width: 150px;
-  height: 40px;
+  height: 1.5rem;
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+  padding-top: 5px;
+  color: #000;
 }
 
 .cotizar:hover {
-  box-shadow: 0 0 20px;
+  box-shadow: 0 0 20px blanchedalmond;
+  color: #610000;
 }
 
 .diseno1 {
@@ -190,7 +200,20 @@ a {
 nav ul a li:hover {
   color: #610000;
 }
-
+.nav1 {
+  display: flex;
+  gap: 70px;
+  margin-left: 20px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.navI {
+  color: #000;
+  font-weight: 500;
+}
+.navI:hover {
+  color: #610000;
+}
 /*CaRD  */
 .card {
   width: 250px;
@@ -212,6 +235,14 @@ nav ul a li:hover {
   gap: 55px;
 
   justify-content: center;
+}
+
+.fotoOp {
+  width: 250px;
+}
+
+.logoFinal1 {
+  width: 150px;
 }
 
 /* CARRUSEL */
@@ -261,10 +292,10 @@ nav ul a li:hover {
 .camioneta:hover {
   @keyframes moverImagen {
     from {
-      transform: translateX(-12, 80rem);
+      transform: translateX(-204px);
     }
     to {
-      transform: translateX(18.75rem);
+      transform: translateX(300px);
     }
   }
 }
@@ -380,6 +411,19 @@ nav ul a li:hover {
 
 .contE {
   grid-area: contE;
+}
+
+.contA:hover {
+  box-shadow: 5px 2px 5px #d9d9d9;
+}
+.contC:hover {
+  box-shadow: 5px 2px 5px #d9d9d9;
+}
+.contD:hover {
+  box-shadow: 5px 2px 5px #d9d9d9;
+}
+.contE:hover {
+  box-shadow: 5px 2px 5px #d9d9d9;
 }
 
 .contVideo {

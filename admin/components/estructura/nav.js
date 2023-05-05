@@ -9,6 +9,7 @@ export default function Nav() {
     <div className={font.className}>
       <header className="contNav">
         <h1 className="logoNav">Matt Cargo</h1>
+
         <nav>
           <ul className="nav1">
             <a href="./index.html">
@@ -22,6 +23,7 @@ export default function Nav() {
             </a>
           </ul>
         </nav>
+
         <section id="menuLogin">
           <a href="/assets/pages/login.html">
             <img

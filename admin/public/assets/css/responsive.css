@@ -60,6 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 35px;
   }
   a {
     height: 50px;
@@ -67,11 +68,9 @@
 
   .contGris {
     display: none;
-    z-index: -2;
-    margin-bottom: 500px;
   }
   .toroPortada {
-    width: 20rem;
+    width: 18rem;
     position: absolute;
     top: 300px;
   }
@@ -127,7 +126,6 @@
   }
 
   .cotizar {
-    top: 40rem;
     right: 100px;
   }
 
@@ -306,6 +304,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 35px;
   }
   a {
     height: 50px;
@@ -374,7 +373,7 @@
   }
 
   .cotizar {
-    top: 40rem;
+    top: 45rem;
     right: 100px;
   }
 
@@ -554,6 +553,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 35px;
   }
   a {
     height: 50px;
@@ -691,7 +691,7 @@
   .contOp {
     display: flex;
     flex-direction: column;
-    margin-left: 4rem;
+
     margin-bottom: 20px;
   }
   .card {
@@ -802,6 +802,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
   a {
     height: 50px;
@@ -1060,7 +1061,7 @@
   }
 
   .info {
-    margin-top: 22rem;
+    margin-top: 35rem;
   }
 
   .info2 {
@@ -1116,9 +1117,8 @@
     z-index: 2;
     transition: 0.5s ease;
   }
-
   .info {
-    margin-top: 22rem;
+    margin-top: 35rem;
   }
 
   .info2 {
@@ -1171,7 +1171,7 @@
   }
 
   .info {
-    margin-top: 22rem;
+    margin-top: 35rem;
   }
 
   .info2 {

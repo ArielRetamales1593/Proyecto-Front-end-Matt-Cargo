@@ -23,34 +23,30 @@
       <h1 class="logoNav">Matt Cargo</h1>
       <nav>
         <ul class="nav1">
-          <a href="./index.html">
-            <li>Inicio</li>
-          </a>
-          <a href="../cotizacion">
-            <li>Servicio</li>
-          </a>
-          <a href="./assets/pages/contacto.html">
-            <li>Contacto</li>
-          </a>
+          <li>
+            <a class="navI" href="./index.html"> Inicio </a>
+          </li>
+          <li>
+            <a class="navI" href="../cotizacion">Servicio </a>
+          </li>
+          <li>
+            <a class="navI" href="./assets/pages/contacto.html"> Contacto</a>
+          </li>
         </ul>
       </nav>
-      <section id="menuLogin">
+      <div id="menuLogin">
         <a href="/assets/pages/login.html">
           <img
             src="assets/img/iconologin.png"
             alt="userLoginIcon"
             class="login"
         /></a>
-      </section>
+      </div>
     </header>
+    <!-- Bienvenida -->
 
     <main>
-      <img
-        src="./assets/img/Proyecto nuevo (1).png"
-        width="800px"
-        alt="toroGranate"
-        class="toroPortada"
-      />
+      <img src="./assets/img/toro.png" alt="toroGranate" class="toroPortada" />
       <div class="contGris"></div>
 
       <div class="contenedorBanner">
@@ -60,15 +56,13 @@
         <div class="diseno1"></div>
         <img
           class="carretera"
-          src="./assets/img/kisspng-indian-national-highway-system-roadworks-image-5c4dbc4945fb29 1 (1).png"
-          alt=""
+          src="./assets/img/carretera.png"
+          alt="carretera"
         />
       </div>
 
-      <button class="cotizar">
-        <a href="../cotizacion"> Cotiza Aquí</a>
-      </button>
-
+      <a class="cotizar" href="../cotizacion"> Cotiza Aquí</a>
+      <!-- 1ercontenido -->
       <section class="info">
         <h2 class="bienvenida">Bienvenidos a Matt Cargo</h2>
 
@@ -99,7 +93,7 @@
 
         <img src="./assets/img/camioneta.png" class="camioneta" alt="" />
       </section>
-
+      <!-- Servicios -->
       <section class="info2">
         <div class="grupoCont">
           <div class="contFondo"></div>
@@ -121,6 +115,7 @@
         </p>
       </section>
 
+      <!--Multimedia  -->
       <section class="carrusel">
         <img src="./assets/img/Puerto_-1030x771.jpg" alt="" />
         <img
@@ -141,9 +136,10 @@
         />
       </section>
 
+      <!-- Seccion Grid -->
       <section class="contenedorGrid">
         <div class="contA">
-          <img src="./assets/img/icons8-camión-50.png" class="" alt="" />
+          <img src="./assets/img/icons8-camión-50.png" class="" alt="camion" />
 
           <h2>Rapidez</h2>
           <p>
@@ -152,10 +148,10 @@
           </p>
         </div>
         <div class="contB">
-          <img src="./assets/img/mapa-tarifa (1).png" width="120px" alt="" />
+          <img src="./assets/img/mapa.png" alt="mapa" class="mapa" />
         </div>
         <div class="contC">
-          <img src="./assets/img/icons8-caja-fuerte-50.png" alt="" />
+          <img src="./assets/img/icons8-caja-fuerte-50.png" alt="caja" />
           <h2>Seguridad</h2>
           <p>
             Realizamos entregas con los más altos estándares de seguridad,
@@ -183,10 +179,11 @@
           </p>
         </div>
       </section>
+      <!-- Opiniones -->
 
       <article class="contOp">
         <div class="card">
-          <img src="./assets/img/mujer.png.png" width="250px" alt="" />
+          <img src="./assets/img/mujer.png.png" class="fotoOp" alt="mujer1" />
           <h3>Cristina rami</h3>
           <p>
             "Nuestra empresa, ABC Electronics, ha utilizado los servicios de
@@ -195,7 +192,7 @@
         </div>
 
         <div class="card">
-          <img src="./assets/img/hombre.png.png" width="250px" alt="" />
+          <img src="./assets/img/hombre.png.png" class="fotoOp" alt="hombre" />
           <h3>Domingo Ramirez</h3>
           <p>
             "Hemos utilizado el servicio de envío de Matt Cargo para enviar
@@ -206,7 +203,7 @@
         </div>
 
         <div class="card">
-          <img src="./assets/img/mujer2.png" width="250px" alt="" />
+          <img src="./assets/img/mujer2.png" class="fotoOp" alt="mujer" />
           <h3>Carolina Nazur</h3>
           <p>
             "Como dueña de una pequeña empresa que vende productos de arte en
@@ -217,10 +214,11 @@
         </div>
       </article>
 
+      <!-- Seccion video -->
       <section class="contVideo">
         <video
           class="videologo"
-          src="./assets/video/logo animation.mp4"
+          src="./assets/video/video.mp4"
           autoplay
           muted
           loop

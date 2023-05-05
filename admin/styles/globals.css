@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
 body {
   color: black;
-  font-family: "Poppins" sans-serif;
+
   background-color: white;
 }
 
@@ -196,7 +196,7 @@ li {
   gap: 20px;
   margin-bottom: 100px;
 }
-.card {
+.card1 {
   padding: 20px;
   border: double 10px #610000;
   display: flex;

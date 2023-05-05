@@ -53,7 +53,7 @@ export default function Preguntas({ contactos, setContacto }) {
       <h3 className="tituloTabla">Consultas Usuarios</h3>
       <div className="contConsultas">
         {contactos.map((contacto) => (
-          <div key={contacto.id} className="card">
+          <div key={contacto.id} className="card1">
             <p>
               <strong>Nombre:</strong> {contacto.nombre}
             </p>
