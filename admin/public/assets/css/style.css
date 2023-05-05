@@ -44,6 +44,19 @@ body {
   filter: contrast(900%) drop-shadow(16px 16px 20px rgb(26, 11, 11)) invert(75%);
 }
 
+.carretera2 {
+  width: 1000px;
+  position: absolute;
+  right: 1px;
+  height: 620px;
+  top: 10px;
+  z-index: -1;
+  mix-blend-mode: difference;
+  opacity: 35%;
+
+  filter: contrast(900%) drop-shadow(16px 16px 20px rgb(26, 11, 11)) invert(75%);
+}
+
 .mapa {
   width: 120px;
 }

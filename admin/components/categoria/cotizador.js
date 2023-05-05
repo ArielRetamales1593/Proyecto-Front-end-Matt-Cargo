@@ -119,7 +119,7 @@ export default function CategoriaListado({ categorias, setCategorias }) {
               </option>
             ))}
           </select>
-          <label htmlfor="origen">Destino:</label>
+          <label htmlFor="origen">Destino:</label>
           <select value={destino} onChange={(e) => setDestino(e.target.value)}>
             <option value="0">Selecciona una cuida de destino</option>
             {categorias.map((categoria) => (
