@@ -11,13 +11,13 @@ Servicios door to door con constante seguimiento de la carga a través de GPS y 
 ## Funcionalidades de aplicación
 
 Registro de usuarios
-Cotizacion de servicios
-Compra de servicio
-Panel de administración para usuario ,consulta de cotizaciones y servicios adquiridos
+Cotización de servicios
+
+Panel de administración, respuesta a consultas enviadas por formulario y gestión de rutas
 
 ## logo
 
-![granate|50](./admin/public/assets/img/logoblancoFinal.png)
+![granate|50](./admin/public/assets/img/logoblanco1.png)
 
 ## Paleta de colores
 
@@ -29,24 +29,22 @@ Panel de administración para usuario ,consulta de cotizaciones y servicios adqu
 | Blanco  | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 | Gris    | ![#cabfbf](https://via.placeholder.com/10/cabfbf?text=+) #cabfbf |
 
--Granate:#610000
--Blanco:#ffffff
-#-Gris:#cabfbf
-
 ##
 
-![banner|100](../Proyecto-Front-end-Matt-Cargo/admin/public/assets/img/banner.png)
-
-## Referencias
+![banner|100](./admin/public/assets/img/banner.png)
 
 ## Tecnologías utilizadas
 
-HTML, CSS y JavaScript para parte publica
-Next js y Firebase para parte privada. \
+HTML, CSS y JavaScript para parte publica.
+Next js y Firebase para parte privada.
 
 ## Demo
 
-Zona Publica https://mattcargo.vercel.app/
-Zona Privada https://mattcargo.vercel.app/assets/pages/login.html
-Email: hola@gmail.com
-password: demo01
+![Matt Cargo](./demo.gif)
+
+- Zona Publica : https://mattcargo.vercel.app/
+- Zona Privada : https://mattcargo.vercel.app/assets/pages/login.html
+- Login:
+
+- Email: hola@gmail.com
+- password: demo01
