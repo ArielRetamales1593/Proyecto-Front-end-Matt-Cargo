@@ -17,7 +17,7 @@ Panel de administración para usuario ,consulta de cotizaciones y servicios adqu
 
 ## logo
 
-![granate|50](./assets/img/logoblanco1.png)
+![granate|50](./admin/public/assets/img/logoblancoFinal.png)
 
 ## Paleta de colores
 
@@ -35,10 +35,18 @@ Panel de administración para usuario ,consulta de cotizaciones y servicios adqu
 
 ##
 
-![banner|100](./assets/img/banner.png)
+![banner|100](../Proyecto-Front-end-Matt-Cargo/admin/public/assets/img/banner.png)
 
 ## Referencias
 
 ## Tecnologías utilizadas
 
-HTML, CSS y JavaScript para el front-end
+HTML, CSS y JavaScript para parte publica
+Next js y Firebase para parte privada. \
+
+## Demo
+
+Zona Publica https://mattcargo.vercel.app/
+Zona Privada https://mattcargo.vercel.app/assets/pages/login.html
+Email: hola@gmail.com
+password: demo01
