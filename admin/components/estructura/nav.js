@@ -12,7 +12,7 @@ export default function Nav() {
 
         <nav>
           <ul className="nav1">
-            <a href="./index.html">
+            <a href="">
               <li>Inicio</li>
             </a>
             <a href="../cotizacion">

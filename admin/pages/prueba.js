@@ -4,8 +4,10 @@ import Nav from "@/components/estructura/nav";
 import CategoriaManager from "@/components/categoria/manager";
 import Footer from "@/components/estructura/footer";
 import Configuracion from "@/components/otro/config";
+import { useState } from "react";
 
-// const storageUser = localStorage.getItem("usuario");
+// const [storageUser, setStorageUser] = useState("");
+// storageUser = localStorage.getItem("usuario");
 
 // if (storageUser == null) {
 //   window.location = "login.html";
@@ -14,7 +16,7 @@ import Configuracion from "@/components/otro/config";
 // const objetoUser = JSON.parse(storageUser);
 // const token = objetoUser.user.stsTokenManager.accessToken;
 
-// const baseUrl = Configuracion.getBaseUrl();
+// const baseUrl = Configuracion.getWsBaseUrl();
 // const url = baseUrl + "/usuario/token";
 
 // fetch(url, {
